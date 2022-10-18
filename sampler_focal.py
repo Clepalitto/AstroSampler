@@ -1,16 +1,16 @@
 import cv2
 import numpy as np
 
-f1 = focal = int(input("Focal length n°1 (mm) : "))
-f2 = focal = int(input("Focal length n°2 (mm) : "))
-f3 = focal = int(input("Focal length n°3 (mm) : "))
+f1 = int(input("Focal length n°1 (mm) : "))
+f2 = int(input("Focal length n°2 (mm) : "))
+f3 = int(input("Focal length n°3 (mm) : "))
 
 size_y = int(input("Size (height) in arcsec : "))
 size_x = int(input("Size (length) in arcsec : "))
 
 def sample(focal, sizex, sizey):
-    winx = 1200
-    winy = 800
+    winx = 1200  # 6000 / 5
+    winy = 800   # 4000 / 5 
 
     blank = np.zeros((winy, winx, 3), np.uint8)
 
