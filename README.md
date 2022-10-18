@@ -1,0 +1,2 @@
+# AstroSampler
+Astrophotography "simulator"
